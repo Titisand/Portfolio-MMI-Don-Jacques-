@@ -15,7 +15,6 @@
   --shadow: 0 18px 50px rgba(0,0,0,.35);
 }
 
-/* ---------- Reset / Base ---------- */
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
 html, body{ height: 100%; }
@@ -30,7 +29,6 @@ body{
     linear-gradient(180deg, var(--blue-900), var(--blue-950));
 }
 
-/* ---------- Topbar (unique) ---------- */
 .topbar{
   position: sticky;
   top: 0;
@@ -69,7 +67,6 @@ body{
   box-shadow: 0 0 0 4px rgba(30,111,184,.18);
 }
 
-/* Les liens de nav (compatible avec <a> simples ou .nav-link) */
 .topbar-nav{
   display: flex;
   gap: 12px;
@@ -100,7 +97,6 @@ body{
   border-color: rgba(30,111,184,.35);
 }
 
-/* ---------- Navigation retour ---------- */
 .page-nav{
   width: 92%;
   max-width: 1100px;
@@ -133,9 +129,6 @@ body{
   transform: translateX(-1px) scale(0.98);
 }
 
-/* =========================================================
-   ABOUT (Hero) — page d'accueil modernisée
-========================================================= */
 .about-page{
   max-width: 1100px;
   margin: 0 auto;
@@ -280,7 +273,6 @@ body{
   font-size: 14.5px;
 }
 
-/* Bouton global “Next” (utilisé sur Skills V3, etc.) */
 .next-btn,
 .skillsv3-next{
   position: fixed;
@@ -310,9 +302,6 @@ body{
   transform: translateX(-50%) translateY(-1px) scale(.99);
 }
 
-/* =========================================================
-   PROJETS (V2) — page projets.html
-========================================================= */
 .projects-v2{
   min-height: calc(100vh - 54px);
   padding: 30px 0 110px;
@@ -437,10 +426,6 @@ body{
 .bg-art{ background: linear-gradient(135deg, #0b2a55, #3f79c9); }
 .bg-code{ background: linear-gradient(135deg, #0b3a66, #1fa2ff); }
 
-/* =========================================================
-   PAGES CATEGORIE (V3) — audiovisuel / codage / art
-   -> projectv3 (pcard), codev3 (ccard), artv3 (acard)
-========================================================= */
 .projectv3, .codev3, .artv3, .contactv3, .skillsv3{
   min-height: calc(100vh - 54px);
   padding: 26px 0 110px;
@@ -458,7 +443,6 @@ body{
   margin: 0 auto;
 }
 
-/* Header commun */
 .projectv3-header, .codev3-header, .artv3-header, .contactv3-header, .skillsv3-header{
   margin: 18px 0 22px;
 }
@@ -493,7 +477,6 @@ body{
   color: rgba(255,255,255,.78);
 }
 
-/* --- Grids --- */
 .projectv3-grid, .codev3-grid, .artv3-grid{
   margin-top: 22px;
   display: grid;
@@ -501,7 +484,6 @@ body{
   gap: 26px;
 }
 
-/* --- Base card V3 --- */
 .pcard, .ccard, .acard{
   border-radius: 22px;
   overflow: hidden;
@@ -524,7 +506,6 @@ body{
   color: inherit;
 }
 
-/* media */
 .pcard-media, .ccard-media{
   height: 320px;
   background-size: cover;
@@ -549,7 +530,6 @@ body{
 
 .acard:hover .acard-media{ transform: scale(1.08); filter: brightness(1.05); }
 
-/* overlays */
 .pcard-overlay, .ccard-overlay, .acard-overlay{
   position: relative;
   padding: 16px;
@@ -565,7 +545,6 @@ body{
 
 .acard-overlay{ margin-top: -125px; }
 
-/* tags */
 .pcard-tag, .ccard-tag, .acard-tag{
   display: inline-flex;
   align-items: center;
@@ -579,7 +558,6 @@ body{
   backdrop-filter: blur(8px);
 }
 
-/* text */
 .pcard-bottom, .ccard-bottom, .acard-bottom{ margin-top: 12px; }
 
 .pcard-bottom h3, .ccard-bottom h3, .acard-bottom h3{
@@ -595,7 +573,6 @@ body{
   line-height: 1.4;
 }
 
-/* CTA */
 .pcard-cta, .ccard-cta, .acard-cta{
   margin-top: 14px;
   display: inline-flex;
@@ -619,7 +596,6 @@ body{
   filter: brightness(1.04);
 }
 
-/* placeholders */
 .p1, .p2, .p3{
   background:
     radial-gradient(circle at 30% 30%, rgba(96,165,250,.45), transparent 55%),
@@ -666,9 +642,6 @@ body{
   pointer-events:none;
 }
 
-/* =========================================================
-   CONTACT V3
-========================================================= */
 .contactv3-grid{
   margin-top: 22px;
   display: grid;
@@ -811,9 +784,6 @@ body{
   line-height: 1.5;
 }
 
-/* =========================================================
-   SKILLS V3
-========================================================= */
 .skillsv3-grid{
   margin-top: 22px;
   display: grid;
@@ -902,9 +872,6 @@ body{
   to{ width: var(--level); }
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
 @media (max-width: 900px){
   .hero-inner{ grid-template-columns: 1fr; padding: 22px; }
   .hero-stats{ grid-template-columns: 1fr; }
@@ -925,3 +892,4 @@ body{
   .topbar-inner{ padding: 12px 16px; }
   .topbar-nav{ gap: 10px; }
 }
+
