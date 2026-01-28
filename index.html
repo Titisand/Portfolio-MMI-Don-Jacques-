@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio – Don Jacques</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- ===== TOP BAR MODERNE (identique partout) ===== -->
   <header class="topbar">
     <div class="topbar-inner">
       <div class="topbar-left">
@@ -17,37 +16,74 @@
       </div>
 
       <nav class="topbar-nav">
-        <a href="index.html">About</a>
-        <a href="projets.html">Projets</a>
-        <a href="competences.html">Compétences</a>
-        <a href="contact.html">Contact</a>
+        <a class="nav-link active" href="index.html">About</a>
+        <a class="nav-link" href="projets.html">Projets</a>
+        <a class="nav-link" href="competences.html">Compétences</a>
+        <a class="nav-link" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- ===== PAGE ABOUT ===== -->
-  <section class="about-section">
+  <main class="about-page">
 
-    <div class="about-header">
-      <div class="about-pill">About me</div>
-    </div>
+    <section class="hero">
+      <div class="hero-bg"></div>
 
-    <div class="about-content">
-      <div class="about-photo"></div>
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="about-pill">About me</div>
 
-      <div class="about-textbox">
-        <p>
-          Je m’appelle Don Jacques, j’ai 19 ans.  
-          J’ai étudié au lycée Jean-Paul de Rocca-Serra à Porto-Vecchio et je suis
-          actuellement en BUT MMI à l’IUT de Corte.  
-          Passionné par l’audiovisuel, la création artistique et le développement,
-          je cherche toujours à progresser à travers mes projets.
-        </p>
+          <h1 class="hero-title">
+            Je suis <span>Don Jacques</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Étudiant en BUT MMI à l’IUT de Corte — passionné par l’audiovisuel,
+            la création artistique et le développement.
+          </p>
+
+          <div class="hero-actions">
+            <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
+            <a href="contact.html" class="btn btn-ghost">Me contacter</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">MMI</div>
+              <div class="stat-label">IUT de Corte</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">Audiovisuel</div>
+              <div class="stat-label">Création & montage</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">Dev</div>
+              <div class="stat-label">Web & projets</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-card">
+            <div class="avatar"></div>
+            <div class="profile-text">
+              <h2>À propos</h2>
+              <p>
+                Je m’appelle Don Jacques, j’ai 19 ans. J’ai étudié au lycée
+                Jean-Paul de Rocca-Serra à Porto-Vecchio et je suis actuellement
+                en BUT MMI à l’IUT de Corte. Passionné par l’audiovisuel, la
+                création artistique et le développement, je cherche toujours à
+                progresser à travers mes projets.
+              </p>
+            </div>
+
+            <a href="projets.html" class="next-btn">Next →</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <a href="projets.html" class="next-btn">Next</a>
-  </section>
+  </main>
 
   <script src="transition.js"></script>
 </body>
