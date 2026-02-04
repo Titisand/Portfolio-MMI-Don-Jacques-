@@ -1,90 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio – Don Jacques</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- ===== TOPBAR ===== -->
   <header class="topbar">
     <div class="topbar-inner">
-      <div class="topbar-left">
-        <span class="brand">Don Jacques</span>
-      </div>
+      <span class="brand">Don Jacques</span>
 
       <nav class="topbar-nav">
-        <a class="nav-link active" href="index.html">About</a>
-        <a class="nav-link" href="projets.html">Projets</a>
-        <a class="nav-link" href="competences.html">Compétences</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="active" href="index.html">About</a>
+        <a href="projets.html">Projets</a>
+        <a href="competences.html">Compétences</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
+  <!-- ===== ABOUT / HERO ===== -->
   <main class="about-page">
-
     <section class="hero">
-      <div class="hero-bg"></div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
 
       <div class="hero-inner">
-        <div class="hero-left">
-          <div class="about-pill">About me</div>
+
+        <div class="hero-content">
+          <span class="about-pill">About me</span>
 
           <h1 class="hero-title">
-            Je suis <span>Don Jacques</span>
+            Salut, moi c’est <span>Don Jacques</span>
           </h1>
 
           <p class="hero-subtitle">
-            Étudiant en BUT MMI à l’IUT de Corte — passionné par l’audiovisuel,
-            la création artistique et le développement.
+            J’ai 19 ans, étudiant en BUT MMI à l’IUT de Corte. Passionné par l’audiovisuel,
+            la création artistique et le développement, je progresse à travers mes projets.
           </p>
 
           <div class="hero-actions">
-            <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
-            <a href="contact.html" class="btn btn-ghost">Me contacter</a>
+            <a class="btn btn-primary" href="projets.html">Voir mes projets</a>
+            <a class="btn btn-ghost" href="contact.html">Me contacter</a>
           </div>
 
           <div class="hero-stats">
             <div class="stat">
-              <div class="stat-number">MMI</div>
-              <div class="stat-label">IUT de Corte</div>
+              <span class="stat-number">MMI</span>
+              <span class="stat-label">BUT à Corte</span>
             </div>
             <div class="stat">
-              <div class="stat-number">Audiovisuel</div>
-              <div class="stat-label">Création & montage</div>
+              <span class="stat-number">3</span>
+              <span class="stat-label">Domaines</span>
             </div>
             <div class="stat">
-              <div class="stat-number">Dev</div>
-              <div class="stat-label">Web & projets</div>
+              <span class="stat-number">+</span>
+              <span class="stat-label">Projets</span>
             </div>
           </div>
         </div>
 
-        <div class="hero-right">
-          <div class="profile-card">
-            <div class="avatar"></div>
-            <div class="profile-text">
-              <h2>À propos</h2>
-              <p>
-                Je m’appelle Don Jacques, j’ai 19 ans. J’ai étudié au lycée
-                Jean-Paul de Rocca-Serra à Porto-Vecchio et je suis actuellement
-                en BUT MMI à l’IUT de Corte. Passionné par l’audiovisuel, la
-                création artistique et le développement, je cherche toujours à
-                progresser à travers mes projets.
-              </p>
-            </div>
+        <aside class="profile-card">
+          <div class="avatar"></div>
 
-            <a href="projets.html" class="next-btn">Next →</a>
+          <div class="profile-text">
+            <h2>À propos</h2>
+            <p>
+              Je travaille sur des projets web, montage vidéo et créations graphiques.
+              Objectif : améliorer mon style et ma technique.
+            </p>
           </div>
-        </div>
+
+          <a class="next-btn" href="projets.html">Next →</a>
+        </aside>
+
       </div>
     </section>
-
   </main>
 
   <script src="transition.js"></script>
 </body>
 </html>
+
