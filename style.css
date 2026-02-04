@@ -295,6 +295,20 @@ body{
     grid-template-columns:1fr;
   }
 }
+@media (max-width: 900px){
+  .hero-inner{
+    grid-template-columns: 1fr;
+  }
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+}
+.about-page{
+  position: relative;
+  overflow: hidden;
+}
+
 
 
 
