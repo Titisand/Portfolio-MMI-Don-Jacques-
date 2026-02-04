@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Créations Artistiques – Don Jacques</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphisme – Don Jacques</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <header class="topbar">
     <div class="topbar-inner">
       <div class="topbar-left">
@@ -17,75 +16,84 @@
 
       <nav class="topbar-nav">
         <a href="index.html">About</a>
-        <a href="projets.html">Projets</a>
+        <a class="active" href="projets.html">Projets</a>
         <a href="competences.html">Compétences</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="artv3">
-    <div class="artv3-inner">
+  <main class="projectv3">
+    <div class="projectv3-inner">
 
       <div class="page-nav">
         <a class="back-btn" href="projets.html">← Retour</a>
       </div>
 
-      <header class="artv3-header">
-        <div class="artv3-pill">Catégorie</div>
-        <h1 class="artv3-title">Créations Artistiques</h1>
-        <p class="artv3-subtitle">
-          Posters, visuels
+      <header class="projectv3-header">
+        <div class="projectv3-pill">Catégorie</div>
+        <h1 class="projectv3-title">Graphisme</h1>
+        <p class="projectv3-subtitle">
+          
         </p>
       </header>
 
-      <section class="artv3-grid">
+      <section class="projectv3-grid">
 
-        <article class="acard">
-          <a class="acard-link" href="#">
-            <div class="acard-media a1"></div>
-            <div class="acard-overlay">
-              <div class="acard-tag">Création</div>
-              <div class="acard-bottom">
-                <h3>Création 1</h3>
-                <span class="acard-cta">Voir →</span>
+        <!-- PROJET 1 (affiche ajoutée ici via .p1) -->
+        <article class="pcard">
+          <a class="pcard-link" href="https://chatgpt.com/backend-api/estuary/content?id=file_00000000bfec7230b691742647c9bd83&ts=491712&p=fs&cid=1&sig=7b5822b528701ab2924f1423c940e71fdbc2a3fa8c81ebba21aeb72fce718f35&v=0">
+            <div class="pcard-media p1"></div>
+            <div class="pcard-overlay">
+              <div class="pcard-tag">Affiche</div>
+              <div class="pcard-bottom">
+                <h3>Corsica Games Week 2026</h3>
+                <p>Affiche / composition visuelle</p>
+                <span class="pcard-cta">Voir →</span>
               </div>
             </div>
           </a>
         </article>
 
-        <article class="acard">
-          <a class="acard-link" href="#">
-            <div class="acard-media a2"></div>
-            <div class="acard-overlay">
-              <div class="acard-tag">Création</div>
-              <div class="acard-bottom">
-                <h3>Création 2</h3>
-                <span class="acard-cta">Voir →</span>
+        <article class="pcard">
+          <a class="pcard-link" href="https://chatgpt.com/backend-api/estuary/content?id=file_00000000798471f8824a0f1b6fea7c34&ts=491712&p=fs&cid=1&sig=d422d29f2d579b66eec1b9e693ca3ff9d629695b5457ab453d0e69e965fef5d1&v=0">
+            <div class="pcard-media p2"></div>
+            <div class="pcard-overlay">
+              <div class="pcard-tag">Projet</div>
+              <div class="pcard-bottom">
+                <h3>Projet 2</h3>
+                <p>Affiche scene de theatre</p>
+                <span class="pcard-cta">Voir →</span>
               </div>
             </div>
           </a>
         </article>
 
-        <article class="acard">
-          <a class="acard-link" href="#">
-            <div class="acard-media a3"></div>
-            <div class="acard-overlay">
-              <div class="acard-tag">Création</div>
-              <div class="acard-bottom">
-                <h3>Création 3</h3>
-                <span class="acard-cta">Voir →</span>
+        <article class="pcard">
+          <a class="pcard-link" href="https://chatgpt.com/backend-api/estuary/content?id=file_00000000a20071f68668a0073a0c3833&ts=491712&p=fs&cid=1&sig=81e1b1f82229c4c4631d7eadbb2e4e8680ba9df5375e52e85069f4655345d29b&v=0">
+            <div class="pcard-media p3"></div>
+            <div class="pcard-overlay">
+              <div class="pcard-tag">Projet</div>
+              <div class="pcard-bottom">
+                <h3>Projet 3</h3>
+                <p>Affiche de parfum</p>
+                <span class="pcard-cta">Voir →</span>
               </div>
             </div>
           </a>
         </article>
 
       </section>
-
     </div>
   </main>
 
   <script src="transition.js"></script>
+ 
+<div class="img-modal" id="imgModal">
+  <span class="img-close" id="imgClose">✕</span>
+  <img id="modalImg" src="" alt="Image projet">
+</div>
+
 </body>
 </html>
 
