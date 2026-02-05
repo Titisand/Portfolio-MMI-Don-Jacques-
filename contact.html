@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact – Don Jacques</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <span class="brand">Don Jacques</span>
+      <div class="topbar-left">
+        <span class="brand">Don Jacques</span>
+      </div>
 
       <nav class="topbar-nav">
         <a href="index.html">About</a>
-        <a href="projet.html">Projets</a>
+        <a href="projets.html">Projets</a>
         <a href="competences.html">Compétences</a>
         <a class="active" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="page contactv3">
+  <main class="contactv3">
     <div class="contactv3-inner">
       <div class="page-nav">
         <a class="back-btn" href="competences.html">← Retour</a>
@@ -30,7 +32,9 @@
       <header class="contactv3-header">
         <div class="contactv3-pill">Me contacter</div>
         <h1 class="contactv3-title">Contact</h1>
-        <p class="contactv3-subtitle">Une idée, une collab, un projet ? Écris-moi ou contacte-moi directement.</p>
+        <p class="contactv3-subtitle">
+          Une idée, une collab, un projet ? Écris-moi ou contacte-moi directement.
+        </p>
       </header>
 
       <section class="contactv3-grid">
@@ -86,12 +90,12 @@
           <form class="cform" action="mailto:donjacquescarli@gmail.com" method="post" enctype="text/plain">
             <label class="cfield">
               <span>Nom</span>
-              <input type="text" name="Nom" placeholder="Ton nom" required />
+              <input type="text" name="Nom" placeholder="Ton nom" required>
             </label>
 
             <label class="cfield">
               <span>Email</span>
-              <input type="email" name="Email" placeholder="ton@email.com" required />
+              <input type="email" name="Email" placeholder="ton@email.com" required>
             </label>
 
             <label class="cfield">
@@ -101,13 +105,18 @@
 
             <button class="cbtn" type="submit">Envoyer →</button>
 
-            <p class="cform-hint">(Le bouton ouvre ton application mail avec le message pré-rempli.)</p>
+            <p class="cform-hint">
+              (Le bouton ouvre ton application mail avec le message pré-rempli.)
+            </p>
           </form>
         </div>
       </section>
     </div>
   </main>
+
+  <script src="transition.js"></script>
 </body>
 </html>
+
 
 
