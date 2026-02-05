@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codage – Don Jacques</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <span class="brand">Don Jacques</span>
+      <div class="topbar-left">
+        <span class="brand">Don Jacques</span>
+      </div>
 
       <nav class="topbar-nav">
         <a href="index.html">About</a>
-        <a class="active" href="projet.html">Projets</a>
+        <a class="active" href="projets.html">Projets</a>
         <a href="competences.html">Compétences</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="page codev3">
+  <main class="codev3">
     <div class="codev3-inner">
       <div class="page-nav">
-        <a class="back-btn" href="projet.html">← Retour</a>
+        <a class="back-btn" href="projets.html">← Retour</a>
       </div>
 
       <header class="codev3-header">
         <div class="codev3-pill">Catégorie</div>
         <h1 class="codev3-title">Codage</h1>
-        <p class="codev3-subtitle">Sites, interfaces, intégrations et petits projets web.</p>
+        <p class="codev3-subtitle">
+          Sites, interfaces, intégrations et petits projets web.
+        </p>
       </header>
 
       <section class="codev3-grid">
@@ -38,7 +42,7 @@
           <a class="ccard-link" href="#">
             <div class="ccard-media c1"></div>
             <div class="ccard-overlay">
-              <span class="ccard-tag">Site</span>
+              <div class="ccard-tag">Site</div>
               <div class="ccard-bottom">
                 <h3>Site 1</h3>
                 <p>HTML / CSS / UI</p>
@@ -52,7 +56,7 @@
           <a class="ccard-link" href="#">
             <div class="ccard-media c2"></div>
             <div class="ccard-overlay">
-              <span class="ccard-tag">App</span>
+              <div class="ccard-tag">App</div>
               <div class="ccard-bottom">
                 <h3>App 2</h3>
                 <p>JS / interaction</p>
@@ -66,7 +70,7 @@
           <a class="ccard-link" href="#">
             <div class="ccard-media c3"></div>
             <div class="ccard-overlay">
-              <span class="ccard-tag">Projet</span>
+              <div class="ccard-tag">Projet</div>
               <div class="ccard-bottom">
                 <h3>Projet 3</h3>
                 <p>Front / intégration</p>
@@ -78,5 +82,8 @@
       </section>
     </div>
   </main>
+
+  <script src="transition.js"></script>
 </body>
 </html>
+
