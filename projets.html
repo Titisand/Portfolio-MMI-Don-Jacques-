@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projets – Don Jacques</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ===== TOP BAR MODERNE (identique partout) ===== -->
+  <!-- ===== TOPBAR ===== -->
   <header class="topbar">
     <div class="topbar-inner">
-      <div class="topbar-left">
-        <span class="brand">Don Jacques</span>
-      </div>
+      <span class="brand">Don Jacques</span>
 
       <nav class="topbar-nav">
         <a href="index.html">About</a>
-        <a href="projets.html">Projets</a>
+        <a class="active" href="projets.html">Projets</a>
         <a href="competences.html">Compétences</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -26,65 +24,62 @@
   </header>
 
   <!-- ===== PAGE PROJETS ===== -->
-  <section class="projects-page projects-v2">
+  <main class="page projects-v2">
+    <div class="projects-inner">
 
-    <div class="page-nav">
-      <a class="back-btn" href="index.html">← Retour</a>
-    </div>
+      <header class="projects-header">
+        <h1 class="projects-title">Projets</h1>
+        <p class="projects-subtitle">
+          Choisis une catégorie pour voir mes réalisations.
+        </p>
+      </header>
 
-    <div class="projects-header">
-      <h1 class="projects-title">Mes projets</h1>
-      <p class="projects-subtitle">
-      </p>
-    </div>
+      <section class="projects-grid">
 
-    <div class="projects-grid">
-
-      <a class="project-card-v2" href="audiovisuel.html">
-        <div class="project-media bg-video"></div>
-        <div class="project-overlay">
-          <div class="project-top">
+        <!-- AUDIOVISUEL -->
+        <a class="project-card-v2" href="audiovisuel.html">
+          <div class="project-media bg-video"></div>
+          <div class="project-overlay">
             <span class="project-tag">Audiovisuel</span>
+            <div class="project-bottom">
+              <h3>Vidéos & Montages</h3>
+              <p>Clips, montages, projets MMI.</p>
+              <span class="project-cta">Entrer →</span>
+            </div>
           </div>
-          <div class="project-bottom">
-            <h3>Montages & vidéos</h3>
-            <div class="project-cta">Voir →</div>
-          </div>
-        </div>
-      </a>
+        </a>
 
-      <a class="project-card-v2" href="creations.html">
-        <div class="project-media bg-art"></div>
-        <div class="project-overlay">
-          <div class="project-top">
-            <span class="project-tag">Création</span>
+        <!-- GRAPHISME -->
+        <a class="project-card-v2" href="graphisme.html">
+          <div class="project-media bg-art"></div>
+          <div class="project-overlay">
+            <span class="project-tag">Créations</span>
+            <div class="project-bottom">
+              <h3>Design & Graphisme</h3>
+              <p>Affiches, identités, visuels.</p>
+              <span class="project-cta">Entrer →</span>
+            </div>
           </div>
-          <div class="project-bottom">
-            <h3>Créations artistiques</h3>
-            <div class="project-cta">Voir →</div>
-          </div>
-        </div>
-      </a>
+        </a>
 
-      <a class="project-card-v2" href="codage.html">
-        <div class="project-media bg-code"></div>
-        <div class="project-overlay">
-          <div class="project-top">
-            <span class="project-tag">Développement</span>
+        <!-- CODAGE -->
+        <a class="project-card-v2" href="codage.html">
+          <div class="project-media bg-code"></div>
+          <div class="project-overlay">
+            <span class="project-tag">Codage</span>
+            <div class="project-bottom">
+              <h3>Sites & Interfaces</h3>
+              <p>HTML, CSS, JS, intégration.</p>
+              <span class="project-cta">Entrer →</span>
+            </div>
           </div>
-          <div class="project-bottom">
-            <h3>Sites & interfaces</h3>
-            <div class="project-cta">Voir →</div>
-          </div>
-        </div>
-      </a>
+        </a>
+
+      </section>
 
     </div>
-
-    <a class="next-btn" href="competences.html">Next</a>
-  </section>
+  </main>
 
   <script src="transition.js"></script>
 </body>
 </html>
-
